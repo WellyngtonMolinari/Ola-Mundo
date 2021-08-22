@@ -1,5 +1,3 @@
-# Ola, Mundo!
- primeiro repositório 
+# Olá, Mundo!
 
-
- Primeiro repositorio criado a partir do GitHub Desktop
+* Primeiro repositorio criado a partir do GitHub Desktop *
