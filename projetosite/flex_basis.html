@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+#main {
+  width: 250px;
+  height: 50px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+#main div {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 10px;
+}
+
+#myBlackDivEx {
+  animation: mymove 2s infinite;
+}
+
+#myBlackDiv {
+  animation: mymove 0.5s infinite;
+}
+
+#myBlackDiv2 {
+  animation: mymove 1s infinite;
+}
+
+#myBlackDiv3 {
+  animation: mymove 2s infinite;
+}
+
+#myBlackDiv4 {
+  animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+  50% {flex-basis: 250px;}
+}
+
+h1{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of flex-basis</h1>
+
+<p>Gradually change the flex-basis property of the BLACK div from 10px to 250px, and back:<p>
+
+<div id="main">
+  <div style="background-color:black;" id="myBlackDivEx"></div>
+</div><br>
+<hr>
+<h1>Machine industry</h1>
+
+  <div id="main">
+    <div style="background-color:black;" id="myBlackDiv"></div>
+  </div>
+  <div id="main">
+    <div style="background-color:black;" id="myBlackDiv2"></div>
+  </div>
+  <div id="main">
+    <div style="background-color:black;" id="myBlackDiv3"></div>
+  </div>
+  <div id="main">
+    <div style="background-color:black;" id="myBlackDiv4"></div>
+  </div>
+  
+<p><strong>Note:</strong> CSS Animations doesn't work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>
