@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto parallax</title>
+
+    <style type="text/css">
+
+        p{
+            margin-bottom: 10px;
+        }
+
+        body, html{
+            margin: 0;
+            font: 16px "Lato", sans-serif;
+            height: 100%;
+        }
+        
+        .conteudo{
+            color:rgb(212, 212, 212);
+            background-color: rgb(68, 68, 68);
+            text-align: justify;
+            padding: 50px 80px;
+        }
+
+        .rodape{
+            color: #777;
+            background-color: rgb(39, 39, 39);
+            text-align: justify;
+            padding: 50px 80px;
+        }
+
+        h3{
+            text-transform: uppercase;
+            color: rgb(230, 230, 230);
+            text-align: center;
+        }
+
+        /* Efeito parallax */
+
+        .conteudo-titulo{
+            position: absolute;
+            left: 0;
+            top: 45%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .conteudo-titulo span.titulo{
+            color:#fff;
+            background-color: #111;
+            padding:18px;
+            font-size: 25px;
+            letter-spacing: 5px;
+        }
+
+        .caixa1, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6{
+            position: relative;
+            height: 100%;
+            opacity: 80%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .caixa1{
+            background-image: url(parallax/imagem1.jpg);
+        }
+
+        .caixa2{
+            background-image: url(parallax/imagem6.jpg);
+
+        }
+
+        .caixa3{
+            background-image: url(parallax/imagem3.jpg);
+        }
+
+        .caixa4{
+            background-image: url(parallax/imagem4.jpg);
+        }
+
+        .caixa5{
+            background-image: url(parallax/imagem5.jpg);
+        }
+
+        .caixa6{
+            background-image: url(parallax/image7.png);
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="caixa1">
+        <div class="conteudo-titulo">
+            <span class="titulo">
+                Conteudo 1
+            </span>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsum aspernatur explicabo excepturi laudantium impedit debitis iusto dicta nostrum quia! Laborum ea soluta velit excepturi delectus voluptates obcaecati praesentium totam.
+        </p>
+    </div>
+
+    <div class="caixa2">
+        <div class="conteudo-titulo">
+            <span class="titulo">
+                Conteudo 2
+            </span>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsum aspernatur explicabo excepturi laudantium impedit debitis iusto dicta nostrum quia! Laborum ea soluta velit excepturi delectus voluptates obcaecati praesentium totam.
+        </p>
+    </div>
+
+    <div class="caixa3">
+        <div class="conteudo-titulo">
+            <span class="titulo">
+                Conteudo 3
+            </span>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsum aspernatur explicabo excepturi laudantium impedit debitis iusto dicta nostrum quia! Laborum ea soluta velit excepturi delectus voluptates obcaecati praesentium totam.
+        </p>
+    </div>
+
+    <div class="caixa4">
+        <div class="conteudo-titulo">
+            <span class="titulo">
+                Conteudo 4
+            </span>
+        </div>
+    </div>
+
+    <div class="caixa5">
+        <div class="conteudo-titulo">
+            <span class="titulo">
+                Conteudo 5
+            </span>
+        </div>
+    </div>
+
+    <div class="caixa6">
+        <div class="conteudo-titulo">
+            <span class="titulo">
+                Conteudo 5
+            </span>
+        </div>
+    </div>
+
+    <div class="rodape">
+        <p><h3>Texto</h3>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A vero maiores sequi saepe enim dolores, nesciunt atque dolorem ex commodi tempore, recusandae adipisci labore unde incidunt vel soluta illum quidem.</p>
+    </div>
+    
+</body>
+</html>
